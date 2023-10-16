@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/saludo}" method="get">
+		<input type="text" autocomplete="off" placeholder="Ingrese el nombre a quien saludar" name="nombreIngresado">
+		<button type="submit">Saludar</button>
+	</form>
+</body>
+</html>

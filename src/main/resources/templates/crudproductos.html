@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)https://cibertec.blackboard.com/bbcswebdav/pid-20794985-dt-content-rid-142151606_1/courses/PECI01.CIBERTEC.MASTER.SP.1894/crudproductos.html -->
+<html xmlns:th="http://www.thymeleaf.org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Getting Started: Serving Web Content</title>
+
+<link rel="stylesheet" th:href="@{/crudproductos_files/bootstrap.min.css}">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+				<div class="col-6 col-sm-4">
+		<h1>Mantenimiento de Productos</h1>
+		<form action="https://cibertec.blackboard.com/bbcswebdav/pid-20794985-dt-content-rid-142151606_1/courses/PECI01.CIBERTEC.MASTER.SP.1894/crudproductos.html" method="post">
+			
+			<div class="form-group">
+				<label for="inputCod">Código</label> 
+				<input type="text" class="form-control" id="inputCod" placeholder="Código" autocomplete="off">
+			</div>
+			<div class="form-group">
+				<label for="inputNom">Nombre</label> 
+				<input type="text" class="form-control" id="inputNom" placeholder="Nombre" autocomplete="off">
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputStk">Stock</label> 
+					<input type="number" class="form-control" id="inputStk" placeholder="0">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputPrec">Precio</label> 
+					<input type="number" step="0.01" class="form-control" id="inputPrec" placeholder="0.00">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="inputCat">Categoría</label> 
+					<select id="inputCat" class="form-control">
+						<option value="-1">Seleccione...</option>
+						
+					</select>
+					
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputEstado">Estado</label> 
+					<select id="inputEstado" class="form-control">
+						<option value="-1">Seleccione...</option>
+						<option value="1">Activo</option>
+						<option value="0">Eliminado</option>
+					</select>
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputProv">Proveedor</label> 
+					<select id="inputProv" class="form-control">
+						<option value="-1">Seleccione...</option>
+						
+					</select>
+				</div>
+			</div>
+			
+			<div id="botones">
+				<button type="button" class="btn btn-primary btn-procesar">Procesar</button>
+			</div>
+		</form>
+		<div id="mensaje" class="text-center text-primary"></div>
+	</div>
+	<div class="col-6 col-sm-7">
+				<h3></h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Descripción</th>
+							<th>Stock</th>
+							<th>Precio</th>
+							<th>Categoría</th>
+							<th>Proveedor</th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+<script th:src="@{/crudproductos_files/jquery-3.2.1.slim.min.js.descarga}"></script>
+<script th:src="@{/crudproductos_files/popper.min.js.descarga}"></script>
+<script th:src="@{/crudproductos_files/bootstrap.min.js.descarga}"></script>
+<script th:src="@{/js/crudproductos.js}"></script>
+</body></html>
